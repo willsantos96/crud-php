@@ -15,7 +15,10 @@ return new class extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nome'); //varchar 255
+            $table->decimal('valor'); // decimal / float
+            $table->integer('estoque'); //int
+            $table->timestamps(); //created_at | updated_at
         });
     }
 
