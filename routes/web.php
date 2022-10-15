@@ -61,3 +61,11 @@ Route::get('/excluir-produto/{id}', function (Request $request, $id) {
 
     echo "Produto excluído com sucesso!";
 });
+
+
+//rota de lista de produtos cadastrados no db
+Route::get('/lista-de-produtos', function () {
+
+    $produtos = Produto::all();
+    return view('lista', ['produtos' => $produtos]);
+});
