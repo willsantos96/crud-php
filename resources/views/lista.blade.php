@@ -38,7 +38,20 @@
     <div class="display-flex">
 
         <a class="btn btn-dark" href="/" role="button">Voltar</a>
-        <a class="btn btn-dark" href="/editar-produto/" role="button">Editar produtos</a>
+
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                Selecione o produto para editar:
+                <!--{{ $produto-> nome }}-->
+            </button>
+            <div class="dropdown-menu bg-dark">
+                @foreach($produtos as $produto)
+                <a class="dropdown-item" href="/editar-produto/{{ $produto -> id }}">
+                    {{ $produto -> nome }}
+                </a>
+                @endforeach
+            </div>
+        </div>
 
     </div>
 
