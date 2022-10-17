@@ -35,6 +35,13 @@
         </tbody>
     </table>
 
+    <div class="display-flex">
+
+        <a class="btn btn-dark" href="/" role="button">Voltar</a>
+        <a class="btn btn-dark" href="/editar-produto/" role="button">Editar produtos</a>
+
+    </div>
+
 
 
     <!-- JavaScript (Opcional) -->

@@ -28,7 +28,7 @@
             <div class="form-group">
                 <label>Valor do produto</label>
                 <input class="form-control" type="text" name="valor">
-                <small class="form-text text-muted">Utulize ponto no lugar da vírgula.</small>
+                <small class="form-text text-muted">Utilize ponto no lugar da vírgula.</small>
             </div>
 
             <div class="form-group">
@@ -43,6 +43,7 @@
         <div class="display-flex">
 
             <a class="btn btn-dark" href="/lista-de-produtos" role="button">Lista de produtos</a>
+
         </div>
 
 
