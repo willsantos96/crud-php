@@ -69,3 +69,7 @@ Route::get('/lista-de-produtos', function () {
     $produtos = Produto::all();
     return view('lista', ['produtos' => $produtos]);
 });
+
+
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
