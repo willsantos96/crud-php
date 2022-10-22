@@ -14,40 +14,34 @@
 
 <body>
 
+
+
     <div class="container">
+        <div class="container-fluid">
 
 
-        <form action="/cadastrar-produto" method="POST">
-
-            @csrf
-            <div class="form-group">
-                <label>Nome do produto</label>
-                <input class="form-control" type="text" name="nome">
+            <div class="jumbotron">
+                <h1 class="display-4">Olá, seja bem vindo ao sistema!</h1>
+                <p class="lead">Aqui nesse sistema, você poderá adicionar, alterar ou remover produtos.</p>
+                <hr class="my-4">
+                <p>Para ter acesso aos produtos, é preciso estar logado.</p>
+                <a class="btn btn-dark" href="lista-de-produtos" role="button">Acessar produtos</a>
             </div>
 
-            <div class="form-group">
-                <label>Valor do produto</label>
-                <input class="form-control" type="text" name="valor">
-                <small class="form-text text-muted">Utilize ponto no lugar da vírgula.</small>
-            </div>
-
-            <div class="form-group">
-                <label>Quantidade em estoque</label>
-                <input class="form-control" type="text" name="estoque">
-            </div>
-
-            <button type="submit" class="btn btn-dark">Enviar</button>
-        </form> <br><br><br>
-
-
-        <div class="display-flex">
-
-            <a class="btn btn-dark" href="/lista-de-produtos" role="button">Lista de produtos</a>
 
         </div>
-
-
     </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

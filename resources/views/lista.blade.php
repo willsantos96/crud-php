@@ -28,8 +28,8 @@
             <tr>
                 <th scope="row"> {{ $produto-> id }} </th>
                 <td>{{ $produto-> nome }}</td>
-                <td>{{ $produto-> valor }}</td>
-                <td>{{ $produto-> estoque }}</td>
+                <td>R$ {{ $produto-> valor }}</td>
+                <td>{{ $produto-> estoque }} un.</td>
             </tr>
             @endforeach
         </tbody>
@@ -37,7 +37,7 @@
 
     <div class="display-flex">
 
-        <a class="btn btn-dark" href="/" role="button">Voltar</a>
+        <a class="btn btn-dark" href="/" role="button">Voltar ao início</a>
 
         <div class="btn-group" role="group">
             <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
@@ -52,6 +52,8 @@
                 @endforeach
             </div>
         </div>
+
+        <a class="btn btn-dark" href="/adicionar-produto" role="button">Adicionar produto</a>
 
     </div>
 

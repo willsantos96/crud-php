@@ -5,8 +5,12 @@ use Illuminate\Http\Request;
 use App\Models\Produto;
 
 
-
 Route::get('/', function () {
+    return view('bem-vindo');
+});
+
+
+Route::get('/adicionar-produto', function () {
     return view('inicio');
 });
 
