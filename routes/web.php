@@ -51,7 +51,7 @@ Route::post('/editar-produto/{id}', function (Request $request, $id) {
         'estoque' => $request->estoque
     ]);
     echo "Produto editado com sucesso!";
-});
+})->middleware('auth');
 
 
 Route::get('/excluir-produto/{id}', function (Request $request, $id) {

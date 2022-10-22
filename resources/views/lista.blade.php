@@ -44,7 +44,7 @@
                 Selecione o produto para editar:
                 <!--{{ $produto-> nome }}-->
             </button>
-            <div class="dropdown-menu bg-dark">
+            <div class="dropdown-menu">
                 @foreach($produtos as $produto)
                 <a class="dropdown-item" href="/editar-produto/{{ $produto -> id }}">
                     {{ $produto -> nome }}
